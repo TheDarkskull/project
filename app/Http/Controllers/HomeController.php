@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Music;
+
 
 class HomeController extends Controller
 {
@@ -33,17 +36,28 @@ class HomeController extends Controller
     }
     
     //Récupère les données du formulaire
-    public function ajoutermamusic(Request $request)
+    public function createmusic(Request $request)
     {
+
+         /* $request->validate([
+            'photo' => 'file',
+            'son' => 'file'
+        ]);
+        */
+        $f = $request->file('photo')->store('photos/');
+        $mu = $request->file('son')->store('son/');
+        
         $m = new Music();
-        $m -> titre = $request -> input ('titre');
-        $m -> son = $request -> input ('son');
-        $m -> auteur = $request -> input ('auteur');
-        $m -> duree = $request -> input ('duree');
-        $m -> photo = $request -> input ('photo');
-        //$m -> user_id = {{Auth::user}};
+        $m -> titre = $request->input ('titre');
+        $m -> son = "/storage/".$mu;
+        $m -> auteur = $request->input ('auteur');
+        $m -> duree = $request->input ('duree');
+        $m -> photo = "/storage/".$f;
+        $m -> user_id = Auth::id();
         
         $m-> save();
-        return back();
+        //die(1);
+        //return back();
+        return redirect("/index/");
     }
 }

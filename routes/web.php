@@ -17,7 +17,7 @@ Route::get('/index', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home','HomeController@index')->name('home');
 
 Route::get('/musiques_du_moment', function () {
     return view('musiques_du_moment');
@@ -35,6 +35,4 @@ Route::get('/ajouter_music', function () {
     return view('ajouter_music');
 });
 
-Route::get('/ajoutermamusic', function () {
-    return view('ajouter_music');
-});
+Route::post('/createmusic', "HomeController@createmusic");
