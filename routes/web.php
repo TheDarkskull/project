@@ -34,3 +34,7 @@ Route::get('/playlist', function () {
 Route::get('/ajouter_music', function () {
     return view('ajouter_music');
 });
+
+Route::get('/ajoutermamusic', function () {
+    return view('ajouter_music');
+});
