@@ -20,4 +20,10 @@
             <div class="favoris">
                 <h1>Favoris</h1>
             </div>
+            
+            <div class="musicBD">
+                <h1>Les Musiques dans la BD</h1>
+                <img src="storage/app/public/photos/dQ03RupmMrNWrKDGZMFgezRHjmuhmqjcmEZlE6qj.jpeg">
+            </div>
+            
             @endsection
