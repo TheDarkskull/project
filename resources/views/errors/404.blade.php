@@ -10,9 +10,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link href="{{asset('css/stickmusic.css')}}" rel="stylesheet">
+        <link href="{{asset('css/404.css')}}" rel="stylesheet">
 
-        
+       
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -37,23 +37,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    @yield('titre')
+                   Erreur 404
                 </div>
 
                 <div class="links">
-                    <a href="index">Accueil</a>
-                    <a href="musiques_du_moment">Musique du moment</a>
-                    <a href="genre">Genre</a>
-                    <a href="playlist">Playlist</a>
-                    <a href="ajouter_music">Ajouter une musique</a>
+                   la page n'existe pas
  
                 </div>
             </div>
         </div>
-        <div class="body">
-
-          @yield('content')
-        </div>
+   
 
     </body>
 </html>
