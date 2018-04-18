@@ -39,7 +39,7 @@
                 <div class="title m-b-md">
                     @yield('titre')
                 </div>
-
+{{-- bonjour --}}
                 <div class="links">
                     <a href="index">Accueil</a>
                     <a href="musiques_du_moment">Musique du moment</a>
