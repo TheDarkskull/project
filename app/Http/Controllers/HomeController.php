@@ -54,6 +54,8 @@ class HomeController extends Controller
         $m -> duree = $request->input ('duree');
         $m -> photo = "/storage/".$f;
         $m -> user_id = Auth::id();
+        $m -> genre = $request->input ('genre');
+        $m -> date = $request->input ('date');
         
         $m-> save();
         //die(1);
