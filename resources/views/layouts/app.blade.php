@@ -21,6 +21,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+   
+   <!-- Le Lecteur audio -->
+   <audio id='audio' controls src="/tmp/toto.m4a"></audio>
+   
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: black;">
             <div class="container" style="color:#d6006c;">
