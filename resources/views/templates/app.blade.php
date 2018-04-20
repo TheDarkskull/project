@@ -11,6 +11,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="{{asset('css/stickmusic.css')}}" rel="stylesheet">
+            <script src="{{ asset('js/jquery.js') }}" defer></script>
+            <script src="{{ asset('js/audio.js') }}" defer></script>
+
 
         
     </head>
@@ -39,6 +42,7 @@
                 <div class="title m-b-md">
                     @yield('titre')
                 </div>
+                <audio id='audio' controls src="/tmp/toto.m4a"></audio>
 
                 <div class="links">
                     <a href="index">Accueil</a>
@@ -50,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="body">
+        <div id='body' class="body">
 
           @yield('content')
         </div>

@@ -5,9 +5,10 @@
    @endsection
 
    @section('content')
+        
            <div class="titres">
                 <h1>Mes titres</h1>
-                <a class='chanson' href="#" data-file='/storage/son/obzQ40RNn7zTlfx034ai8ZTkspcFP9yMEGUvnEUN'><img src="/storage/photos/dQ03RupmMrNWrKDGZMFgezRHjmuhmqjcmEZlE6qj.jpeg" width="250px"></a>
+                <a class='chanson' href="#" data-file='/storage/son/6lzzuOQ0peQSwzkB6X3oYKGo8YkacCsa1S0FI3P3.mpga'><img src="/storage/photos/dQ03RupmMrNWrKDGZMFgezRHjmuhmqjcmEZlE6qj.jpeg" width="250px"></a>
             </div>
 
             <div class="playlists">
